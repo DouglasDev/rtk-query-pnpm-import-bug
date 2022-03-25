@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import './index.css';
 
+//this works sometimes:
+import '@reduxjs/toolkit';
+//this never works:
+import '@reduxjs/toolkit/query';
+//produces error: "Error: Package "immer" not found. Have you installed it?"
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
